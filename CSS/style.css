@@ -223,32 +223,33 @@ a{
 */
 
 
-/* Utilidades */
+/*
+  iPhone 8
+*/
 
 @media all and (min-width: 375px){
   .container{
     width: 34.2rem;
     margin: auto;
   }
+  .batatabit__characteristics--cards{
+    width: 35rem;
+  }
+  .card{
+    width: 34.3rem;
+  }
 }
+
+
+/*
+  iPhone 11 Pro
+*/
+
 @media all and (min-width: 414px){
   .container{
     width: 38.2rem;
     margin: auto;
   }
-}
-@media all and (min-width: 834px){
-  .container{
-    width: 46.4rem;
-    margin: auto;
-  }
-}
-
-
-/* Header */
-
-
-@media all and (min-width: 414px){
   .header{
     height: 27rem;
   }
@@ -261,7 +262,17 @@ a{
     top: 3.38rem;
   }
 }
+
+
+/*
+  iPad Pro 11'' -1
+*/
+
 @media all and (min-width: 834px){
+  .container{
+    width: 46.4rem;
+    margin: auto;
+  }
   .header{
     height: 48rem;
   }
@@ -285,13 +296,6 @@ a{
     position: relative;
     top: 7.38rem;
   }
-}
-
-
-/* Main */
-
-
-@media all and (min-width: 834px){
   .main__description--a{
     font-size: 4rem;
     line-height: 4.2rem;
@@ -301,20 +305,6 @@ a{
     font-size: 2rem;
     line-height: 2.4rem;
   }
-}
-
-
-/* Batatabit Characteristics */
-
-@media all and (min-width: 375px){
-  .batatabit__characteristics--cards{
-    width: 35rem;
-  }
-  .card{
-    width: 34.3rem;
-  }
-}
-@media all and (min-width: 834px){
   .batatabit__characteristics--cards{
     width: 72rem;
   }
