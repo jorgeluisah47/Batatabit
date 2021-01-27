@@ -173,13 +173,14 @@ a{
 .batatabit__characteristics--cards{
   display: flex;
   flex-wrap: wrap;
+  width: 29rem;
+  margin: auto;
 }
 .card{
   width: 28.8rem;
-  margin: auto;
+  margin: 0 auto 1.5rem auto;
   padding: 1.6rem 1.8rem 2.2rem 1.8rem;
   background-color: var(--warm-black-1);
-  margin-bottom: 1.6rem;
   text-align: start;
   border-radius: 4px;
 }
@@ -306,18 +307,20 @@ a{
 /* Batatabit Characteristics */
 
 @media all and (min-width: 375px){
+  .batatabit__characteristics--cards{
+    width: 35rem;
+  }
   .card{
     width: 34.3rem;
   }
 }
-
 @media all and (min-width: 834px){
-  .container__cards{
-    width: 74rem;
-    margin: auto;
+  .batatabit__characteristics--cards{
+    width: 72rem;
   }
   .card{
     width: 34.5rem;
     height: 15.2rem;
+    margin: 1rem auto;
   }
 }
