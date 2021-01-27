@@ -1,0 +1,246 @@
+/*
+  1. Posicionamiento
+  2. Modelo de caja (Box-model)
+  3. Tipografia
+  4. Visuales
+  5. Otros
+*/
+
+:root{
+  /* Colores */
+  --linearbg: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  --bitcoin-orange: #F7931A;
+  --soft-orange: #FFE9D5;
+  --warm-black: #201E1C;
+  --warm-black-1: #282623;
+  --gray: #BABABA;
+  --off-white: #FAF8F7;
+  --just-white: #FFFFFF;
+
+  /* Tipografia */
+  --dm-sans: 'DM Sans', sans-serif;
+  --inter: 'Inter', sans-serif;
+
+  /* Font-Sizes */
+  --font-12: 1.2rem;
+  --font-14: 1.4rem;
+  --font-16: 1.6rem;
+  --font-18: 1.8rem;
+  --font-24: 2.4rem;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+
+/* Utilidades */
+
+.container{
+  width: 28.8rem;
+  margin: auto;
+}
+.white__shadow{
+  background: #C4C4C4;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+
+/* Header */
+
+.header{
+  background: var(--linearbg);
+  height: 29.5rem;
+  text-align: center;
+}
+.logo{
+  padding-top: 3.9rem;
+  padding-bottom: 3.3rem;
+}
+.header__description--a{
+  font: var(--dm-sans);
+  font-weight: 700;
+  line-height: 2.6rem;
+  font-size: var(--font-24);
+  color: var(--just-white);
+  margin-bottom: 2.4rem;
+}
+.header__description--b{
+  font: var(--dm-sans);
+  font-weight: 500;
+  line-height: 1.8rem;
+  font-size: var(--font-14);
+  color: var(--soft-orange);
+}
+.header__button{
+  padding: 1.5rem 1.6rem;
+  background-color: var(--off-white);
+  width: 22.9rem;
+  margin: auto;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 4px;
+  font: var(--dm-sans);
+  font-size: var(--font-14);
+  position: relative;
+  top: 3.4rem;
+}
+
+
+/* Main */
+.main{
+  background-color: var(--off-white);
+}
+.main__image{
+  padding-top: 5.8rem;
+  text-align: center;
+}
+.main__description--a{
+  font-size: var(--font-24);
+  text-align: center;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+  margin: 4.4rem 0 2.4rem 0 ;
+  font-weight: 700;
+}
+.main__description--b{
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.8rem;
+  color: var(--warm-black);
+  font-weight: 500;
+  color: var(--gray);
+}
+.table{
+  width: 30rem;
+  margin: 4.8rem auto 0 auto;
+}
+.table p{
+  font-size: var(--font-18);
+  color: #F7931A;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.table__element--sup-left{
+  background-color: red;
+  border-radius: 2rem;
+  text-align: center;
+}
+.table__element--price{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Querys */
+
+/*
+    Orden del Resposive
+
+    375px --> iPhone 8
+    414px --> iPhone 11 Pro
+    834px --> iPad Pro 11'' -1
+*/
+
+
+/* Utilidades */
+
+@media all and (min-width: 375px){
+  .container{
+    width: 34.2rem;
+    margin: auto;
+  }
+}
+@media all and (min-width: 414px){
+  .container{
+    width: 38.2rem;
+    margin: auto;
+  }
+}
+@media all and (min-width: 834px){
+  .container{
+    width: 46.4rem;
+    margin: auto;
+  }
+}
+
+
+/* Header */
+
+
+@media all and (min-width: 414px){
+  .header{
+    height: 27rem;
+  }
+  .header__button{
+    position: relative;
+    top: 0rem;
+  }
+  .header__button{
+    position: relative;
+    top: 3.38rem;
+  }
+}
+@media all and (min-width: 834px){
+  .header{
+    height: 48rem;
+  }
+  .logo{
+    padding-top: 9.63rem;
+    padding-bottom: 4.47rem;
+  }
+  .logo a img{
+    width: 20rem;
+  }
+  .header__description--a{
+    line-height: 4.2rem;
+    font-size: 4rem;
+    margin-bottom: 3.2rem;
+  }
+  .header__description--b{
+    line-height: 2.4rem;
+    font-size: 2rem;
+  }
+  .header__button{
+    position: relative;
+    top: 7.38rem;
+  }
+}
+
+
+/* Main */
+
+
+@media all and (min-width: 834px){
+  .main__description--a{
+    font-size: 4rem;
+    line-height: 4.2rem;
+    margin: 4rem 0 2.4rem 0 ;
+  }
+  .main__description--b{
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
