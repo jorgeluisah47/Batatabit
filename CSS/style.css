@@ -29,6 +29,11 @@
   --font-24: 2.4rem;
 }
 
+
+/*
+  Estilos generales
+*/
+
 html{
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
@@ -104,6 +109,12 @@ a{
 
 
 /* Main */
+
+.main__icon{
+  position: relative;
+  margin: auto;
+  top: -1.1rem;
+}
 .main{
   background-color: var(--off-white);
 }
@@ -127,25 +138,84 @@ a{
   font-weight: 500;
   color: var(--gray);
 }
-.table{
-  width: 30rem;
-  margin: 4.8rem auto 0 auto;
+
+
+.table__section{
+  padding: 4.8rem 0 6rem 0;
 }
-.table p{
+.main__currency--table{
+  width: 19.3rem;
+  margin: auto;
+}
+.main__currency--table > p:first-of-type{
+  color: #FF9536;
+  font-family: var(--dm-sans);
   font-size: var(--font-18);
-  color: #F7931A;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin: 0 0 1.2rem 2.5rem;
 }
-.table__element--sup-left{
-  background-color: red;
-  border-radius: 2rem;
-  text-align: center;
+.table__tr{
+  display: flex;
+  font-family: var(--inter);
+  font-size: var(--font-16);
+  line-height: 2rem;
+  color: #B5B0AC;
+  height: 3.9rem;
 }
-.table__element--price{
+.table__individual--element{
+  background-color: var(--just-white);
   display: flex;
   align-items: center;
+  margin-bottom: 1px;
 }
+.table__left{
+  width: 10.1rem;
+  margin-right: 1px;
+  padding-left: 1.2rem;
+}
+.table__right{
+  justify-content: space-around;
+  width: 9.1rem;
+}
+.table__border-sup-left{
+  border-radius: 0.8rem 0 0 0;
+}
+.table__border-sup-right{
+  border-radius: 0 0.8rem 0 0;
+}
+.table__border-inf-left{
+  border-radius: 0 0 0 0.8rem;
+}
+.table__border-inf-right{
+  border-radius: 0 0 0.8rem 0;
+}
+.table__inf--cost{
+  display: inline-block;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin: 2.4rem 0 3rem 2.4rem;
+  font-size: var(--font-12);
+  color: var(--warm-black-1);
+}
+.orange__button{
+  background-color: var(--soft-orange);
+}
+.blue__button{
+  background-color: #E7F5FF;
+}
+.main__currency--commissions{
+  width: 19.3rem;
+  margin: auto;
+}
+.main__currency--commissions > p:first-of-type{
+  color: #1A9AF7;
+  font-family: var(--dm-sans);
+  font-size: var(--font-18);
+  font-weight: 700;
+  margin: 0 0 1.2rem 2.5rem;
+}
+
+
 
 
 /* Batatabit characteristics */
@@ -202,13 +272,24 @@ a{
 }
 
 
+/* Footer */
 
-
-
-
-
-
-
+.footer{
+  background-color: var(--bitcoin-orange);
+  padding: 2rem 0;
+}
+.footer__elements{
+  color: var(--just-white);
+  font-size: 1.4rem;
+  line-height: var(--font-18);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__list li{
+  margin: 0.8rem;
+}
 
 
 
@@ -221,7 +302,6 @@ a{
     414px --> iPhone 11 Pro
     834px --> iPad Pro 11'' -1
 */
-
 
 /*
   iPhone 8
