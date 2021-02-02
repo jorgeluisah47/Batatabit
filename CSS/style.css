@@ -39,6 +39,9 @@ html{
   font-family: 'DM Sans', sans-serif;
   font-family: 'Inter', sans-serif;
 }
+body{
+  font: var(--dm-sans);
+}
 *{
   box-sizing: border-box;
   margin: 0;
@@ -74,19 +77,16 @@ a{
   text-align: center;
 }
 .logo{
-  padding-top: 3.9rem;
-  padding-bottom: 3.3rem;
+  margin: 3.3rem 0;
 }
-.header__description--a{
-  font: var(--dm-sans);
+.header--title{
   font-weight: 700;
   line-height: 2.6rem;
   font-size: var(--font-24);
   color: var(--just-white);
-  margin-bottom: 2.4rem;
 }
-.header__description--b{
-  font: var(--dm-sans);
+.header--title p{
+  padding-top: 2.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   font-size: var(--font-14);
@@ -101,7 +101,6 @@ a{
   display: flex;
   justify-content: space-around;
   border-radius: 4px;
-  font: var(--dm-sans);
   font-size: var(--font-14);
   position: relative;
   top: 3.4rem;
@@ -138,8 +137,6 @@ a{
   font-weight: 500;
   color: var(--gray);
 }
-
-
 .table__section{
   padding: 4.8rem 0 6rem 0;
 }
@@ -214,8 +211,6 @@ a{
   font-weight: 700;
   margin: 0 0 1.2rem 2.5rem;
 }
-
-
 
 
 /* Batatabit characteristics */
@@ -301,6 +296,8 @@ a{
     375px --> iPhone 8
     414px --> iPhone 11 Pro
     834px --> iPad Pro 11'' -1
+    --> MacBook - 1
+    --> iMac
 */
 
 /*
