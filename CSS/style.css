@@ -116,21 +116,29 @@ a{
 }
 .main{
   background-color: var(--off-white);
+  padding-top: 5rem;
 }
 .main__image{
-  padding-top: 5.8rem;
+  height: 20rem;
+  width: 20rem;
+  margin: 0 auto;
+  background-image: url(../assets/img/Bitcoin.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 }
-.main__description--a{
+.main--title{
   font-size: var(--font-24);
   text-align: center;
   line-height: 2.6rem;
   color: var(--warm-black);
-  margin: 4.4rem 0 2.4rem 0 ;
+  margin: 4.4rem 0 0 0;
   font-weight: 700;
 }
-.main__description--b{
-  font-size: 1.4rem;
+.main--title p{
+  margin-top: 2rem;
+  font-size: var(--font-14);
   text-align: center;
   line-height: 1.8rem;
   color: var(--warm-black);
