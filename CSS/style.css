@@ -38,6 +38,8 @@ html{
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  transition-duration: 500ms;
 }
 body{
   font: var(--dm-sans);
@@ -250,7 +252,7 @@ a{
   width: 29rem;
   margin: auto;
 }
-.clock, .eye, .dollar, .check{
+.clock, .eye, .dollar, .check, .arrow{
   display: inline-block;
   height: 2rem;
   width: 2rem;
@@ -266,6 +268,9 @@ a{
 }
 .check{
   background-image: url(../assets/icons/check-circle.svg);
+}
+.arrow{
+  background-image: url(../assets/icons/orange-right-arrow.svg);
 }
 .card{
   width: 28.8rem;
@@ -297,7 +302,6 @@ a{
 
 .bitcoin__image{
   width: 100%;
-  min-width: 320px;
   height: 50vh;
   background-image: url("../assets/img/bitcoinbaby2x.jpg");
   background-repeat: no-repeat;
@@ -311,6 +315,99 @@ a{
   color: var(--just-white);
   padding: 2.5rem;
 }
+
+
+/* Plans */
+
+.plans__section{
+  padding: 5rem 0;
+  text-align: center;
+  background-color: var(--off-white);
+}
+.plans__section > div > h2{
+  font-size: var(--font-24);
+  font-weight: 700;
+  color: var(--warm-black);
+  line-height: 2.6rem;
+}
+.plans__section > div > p{
+  padding-top: 2.4rem;
+  font-size: var(--font-14);
+  font-weight: 500;
+  color: #757575;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.plan__card{
+  position: relative;
+  min-width: 19rem;
+  max-width: 19rem;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  font-family: var(--inter);
+  padding: 2rem 0;
+  margin: 0 5px;
+  scroll-snap-align: center;
+}
+.plan__card--header{
+  width: 12rem;
+  position: absolute;
+  display: inline-block;
+  background-color: var(--bitcoin-orange);
+  color: var(--just-white);
+  font-size: var(--font-12);
+  font-weight: 700;
+  padding: 0.8rem;
+  border-radius: 8px;
+  top: -1.5rem;
+  left: calc(50% - 6rem);
+}
+.plan__card > div > .title{
+  font-size: var(--font-14);
+  font-weight: 500;
+  color: black;
+}
+.plan__card > div .price{
+  font-weight: var(--inter);
+  width: max-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 5.2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.plan__card > div > .advantage{
+  font-weight: 500;
+  font-size: var(--font-12);
+  color: #757575;
+  line-height: 15px;
+  margin-bottom: 16px;
+}
+.plan__card > div a > .botton{
+  background-color: var(--soft-orange);
+  padding: 8px 1.6rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  font-size: var(--font-14);
+  width: max-content;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: var(--bitcoin-orange);
+  border-width: 2px;
+}
+.plan__card > div a > .botton > p{
+  margin-right: 8px;
+}
+.plans__cards--slider{
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding: 2rem 0;
+}
+
 
 /* Footer */
 
