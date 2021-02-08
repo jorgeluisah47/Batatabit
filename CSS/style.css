@@ -480,6 +480,19 @@ a{
     position: relative;
     top: 3.38rem;
   }
+  .main__currency--table{
+    width: 25.2rem;
+  }
+  .main__currency--commissions{
+    width: 25.2rem;
+  }
+  .table__left{
+    width: 12.9rem;
+  }
+  .table__right{
+    justify-content: space-around;
+    width: 11.7rem;
+  }
 }
 
 
