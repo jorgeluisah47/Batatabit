@@ -428,6 +428,39 @@ a{
   margin: 0.8rem;
 }
 
+/* FAQ */
+
+.FAQ{
+  background-color: var(--off-white);
+  color: #757575;
+}
+.FAQ__title{
+  text-align: center;
+  color: var(--warm-black);
+  font-size: var(--font-24);
+  line-height: 26px;
+  font-weight: 700;
+}
+.FAQ__questions{
+  padding: 4rem 0;
+}
+.FAQ__questions div p{
+  width: 24rem;
+  font-size: 1.4rem;
+}
+.FAQ__questions div{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.down__arrow{
+  background-image: url(../assets/icons/down-arrow.svg);
+  background-position: center;
+  width: 14px;
+  background-repeat: no-repeat;
+}
+
 
 
 /* Media Querys */
