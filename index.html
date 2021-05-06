@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="./CSS/style.css" />
   <link rel="shortcut icon" href="./assets/icons/batata.svg" type="image/x-icon" />
   <!-- Title -->
+
+  <script src="./JS/app.js"></script>
+
   <title>Batatabit</title>
 </head>
 
@@ -270,22 +273,83 @@
     <div class="container">
       <h2 class="FAQ__title">¿Preguntas? Aquí estamos para ti.</h2>
       <div class="FAQ__questions">
-        <div>
-          <p>Batatabit me permite hacer compras en su plataforma?</p>
-          <div class="down__arrow"></div>
+
+
+        <div class="accordion-item" id="question1">
+          <a class="accordion-link" href="#question1">
+            <div class="accordion-question">
+              <p>
+                ¿Batabit me permite hacer compras en su plataforma?
+              </p>
+              <div class="question-animation">
+                <img class="down_arrow" src="./assets/icons/down-arrow.svg" alt="">
+                <img class="right_arrow" src="./assets/icons/down-arrow.svg" alt="">
+              </div>
+            </div>
+          </a>
+          <div class="answer">
+            <p>No. Batatabit es una plataforma exclusivamente para consulta de información y toma de decisiones. Todavía
+              no ofrecemos servicios de compra o venta.</p>
+          </div>
         </div>
-        <div>
-          <p>Qué es Bitcoin?</p>
-          <div class="down__arrow"></div>
+
+
+        <div class="accordion-item" id="question2">
+          <a href="#question2" class="accordion-link">
+            <div class="accordion-question">
+              <p>
+                ¿Qué es Bitcoin?
+              </p>
+              <div class="question-animation">
+                <img class="down_arrow" src="./assets/icons/down-arrow.svg"></img>
+                <img class="right_arrow" src="./assets/icons/down-arrow.svg"></img>
+              </div>
+            </div>
+          </a>
+          <div class="answer">
+            <p>Bitcoin es una criptomoneda inventada en 2008. Es considerada una moneda del futuro y esta valuda en 1.15
+              millones de pesos.</p>
+          </div>
         </div>
-        <div>
-          <p>Cómo puedo realizar una transacción en Bitcoins?</p>
-          <div class="down__arrow"></div>
+
+
+        <div class="accordion-item" id="question3">
+          <a href="#question3" class="accordion-link">
+            <div class="accordion-question">
+              <p>
+                ¿Cómo puedo realizar una transacción en Bitcoins?
+              </p>
+              <div class="question-animation">
+                <img class="down_arrow" src="./assets/icons/down-arrow.svg"></img>
+                <img class="right_arrow" src="./assets/icons/down-arrow.svg"></img>
+              </div>
+            </div>
+          </a>
+          <div class="answer">
+            <p>Puede hacerlo por medio de un "Wallet" de compra y venta de criptomonedas.</p>
+          </div>
         </div>
-        <div>
-          <p>Cómo aseguro mis compras?</p>
-          <div class="down__arrow"></div>
+
+
+        <div class="accordion-item" id="question4">
+          <a href="#question4" class="accordion-link">
+            <div class="accordion-question">
+              <p>
+                ¿Cómo aseguro mis compras?
+              </p>
+              <div>
+                <img class="down_arrow" src="./assets/icons/down-arrow.svg"></img>
+                <img class="right_arrow" src="./assets/icons/down-arrow.svg"></img>
+              </div>
+            </div>
+          </a>
+          <div class="answer">
+            <p>Bitcoin tiene una llave criptografica que impide la falsificación o estafas, por lo cual no requiere
+              tener seguridad extra.</p>
+          </div>
         </div>
+
+
       </div>
     </div>
   </section>
