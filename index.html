@@ -5,46 +5,79 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- Fonts -->
+  <!-- 
+        ** Fonts **
+        -- DM+Sans: 500, 700
+        -- Inter: 300, 500
+  -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@300;500&display=swap"
     rel="stylesheet" />
   <!--
-    Estilos:
-      Reset.css
-      style.css
+        ** Estilos **
+        -- Reset.css
+        -- Style.css
   -->
   <link rel="stylesheet" href="./CSS/reset.css" />
   <link rel="stylesheet" href="./CSS/style.css" />
   <link rel="shortcut icon" href="./assets/icons/batata.svg" type="image/x-icon" />
   <!-- Title -->
-
+  <title>Batatabit</title>
+  <!-- Scripts -->
   <script src="./JS/app.js"></script>
 
-  <title>Batatabit</title>
 </head>
 
 <body>
-  <header class="header">
-    <a href="#">
-      <img class="logo" src="./assets/img/logo.svg" alt="Logotipo" />
-    </a>
-    <div class="container">
-      <div class="header--title">
-        <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
-        <p>
-          Batabit te ayuda a navegar entre los diferentes precios y
-          tendencias.
-        </p>
+
+  <header class="white__shadow">
+    <div class="header__part--a white__shadow">
+      <div class="logo__side--header">
+        <a href="#">
+          <img class="logo" src="./assets/icons/batata.svg" alt="Logotipo" />
+        </a>
+        <a href="">
+          <div class="button__header">
+            <p>get free trial</p>
+          </div>
+        </a>
       </div>
-      <a href="#plans">
-        <div class="header__button white__shadow">
-          <p>conoce nuestros planes</p>
-          <img src="./assets/icons/down-arrow.svg" alt="down-arrow" />
+
+      <div class="navbar__side--header" id="loupe1">
+        <a class="search__header" href="#loupe1">
+          <img src="./assets/icons/loupe.png" alt="">
+        </a>
+        <div class="header__part--b black__shadow" id="quit">
+          <div class="header__part--b--content container">
+            <span>
+              <img class="loupe" src="./assets/icons/loupe.png" alt="">
+            </span>
+            <input class="search__input" type="text" placeholder="Search...">
+            <a href="#quit">
+              <span>
+                <img src="./assets/icons/letra-x.png" alt="Exit">
+              </span>
+            </a>
+          </div>
         </div>
-      </a>
+        <a class="menu__header" href="">
+          <img src="./assets/icons/menu.png" alt="">
+        </a>
+      </div>
     </div>
   </header>
+
+  <section class="titles">
+    <div class="container">
+      <div>
+        <h1>Batabit is the next revolution in cryptocurrencies exchange.</h1>
+        <p>
+          Batabit helps you to navigate between the different prices and trends.
+        </p>
+      </div>
+      <a class="button__titles black__shadow" href="">Try Batabit for free.</a>
+    </div>
+  </section>
 
   <main class="main">
     <div class="container">
@@ -214,7 +247,7 @@
       <h2>Escoge el plan que mejor se ajuste a ti.</h2>
       <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
     </div>
-    <div class="container plans__cards--slider">
+    <div class="plans__cards--slider">
       <article class="plan__card black__shadow">
         <div>
           <h3 class="title">Pago Mensual</h3>
@@ -348,8 +381,6 @@
               tener seguridad extra.</p>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
