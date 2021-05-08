@@ -458,66 +458,132 @@ a{
 }
 .plan__card{
   position: relative;
-  min-width: 19rem;
-  max-width: 19rem;
+  min-width: 30rem;
+  max-width: 30rem;
   background-color: var(--just-white);
-  border-radius: 8px;
+  border-radius: 16px;
   font-family: var(--inter);
-  padding: 2rem 0;
-  margin: 0 1rem;
+  margin: 4rem 0;
+  padding-bottom: 1rem;
   scroll-snap-align: center;
 }
-.plan__card--header{
-  width: 12rem;
-  position: absolute;
-  display: inline-block;
-  background-color: var(--bitcoin-orange);
+.plan__card--type{
+  background-color: #F7931A;
+  border-radius: 16px 16px 0 0;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plan__card--type h3{
   color: var(--just-white);
-  font-size: var(--font-12);
+  font-size: var(--font-18);
   font-weight: 700;
-  padding: 0.8rem;
-  border-radius: 8px;
+}
+.plan__card--type h3::after{
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0.7534562211981567) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(255,255,255,0.7465437788018433) 100%);
+  position: absolute;
+  border-radius: 50%;
+  top: 4.4rem;
+  left: 25%;
+}
+.plan__card--price{
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--warm-black);
+  font-size: 6rem;
+  font-weight: 700;
+}
+.plan__card--price::after{
+  content: ".00";
+  font-size: 2rem;
+  position: relative;
   top: -1.5rem;
-  left: calc(50% - 6rem);
 }
-.plan__card > div > .title{
-  font-size: var(--font-14);
-  font-weight: 500;
-  color: black;
-}
-.plan__card > div .price{
-  font-weight: var(--inter);
-  width: max-content;
+
+.plan__card--benefits{
+  color: var(--warm-black-1);
+  font-size: var(--font-16);
+  max-width: 26rem;
   margin: auto;
-  display: flex;
-  align-items: center;
-  font-size: 5.2rem;
+  text-align: center;
+}
+.plan__card--benefits p{
+  margin-bottom: 1rem;
   font-weight: 700;
-  padding: 1rem 0;
 }
-.plan__card > div > .advantage{
-  font-weight: 500;
-  font-size: var(--font-12);
-  color: #757575;
-  line-height: 15px;
-  margin-bottom: 16px;
+.plan__card--benefits p::after{
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: var(--bitcoin-orange);
+  position: relative;
+  display: inline-block;
 }
-.plan__card > div a > .botton{
-  background-color: var(--soft-orange);
-  padding: 8px 1.6rem;
-  display: flex;
-  align-items: center;
+.plan__card--chosen{
+  width: 50%;
+  min-width: 15rem;
   margin: auto;
-  font-size: var(--font-14);
-  width: max-content;
-  border-radius: 8px;
+  display: block;
+  background-color: var(--soft-orange);
+  height: 4rem;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 2rem;
+  margin: 2rem auto 1rem auto;
+}
+.plan__card--chosen:hover{
+  transform: scale(1.05);
+  transition-duration: 500ms;
+}
+.plan__card--chosen div{
+  padding: 0.7rem;
+  color: var(--warm-black);
+  font-size: var(--font-18);
+  text-align: center;
+  color: var(--bitcoin-orange);
+}
+
+.exclusive__deal{
+  position: absolute;
+  left: 25%;
+  top: -2.4rem;
+  height: 3rem;
+  width: 15rem;
+  background-color: #4687ff;
+  color: white;
+  font-size: var(--font-18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+.exclusive__deal::after{
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: calc(50% - 16px );
   border-style: solid;
-  border-color: var(--bitcoin-orange);
-  border-width: 2px;
+  border-color: #4687ff transparent transparent transparent;
+  border-width: 12px 16px 0 16px;
 }
-.plan__card > div a > .botton > p{
-  margin-right: 8px;
+
+.exclusive__deal--skin{
+  border: 6px solid #4687ff;
+  border-radius: 22px;
+  z-index: 1;
 }
+
+.plans__cards--slider{
+  margin-left: calc(50% - 15rem);
+}
+
+/*
 .plans__cards--slider{
   display: flex;
   overflow-x: scroll;
@@ -525,7 +591,7 @@ a{
   scroll-snap-type: x proximity;
   padding: 2rem 0;
 }
-
+*/
 
 /* Footer */
 
